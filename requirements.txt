@@ -1,0 +1,9 @@
+jupyter
+ipython
+ipython-sql
+sqlalchemy
+pandas
+psycopg2-binary
+python-dotenv
+notebook
+jupyterlab

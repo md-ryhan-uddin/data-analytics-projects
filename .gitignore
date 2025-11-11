@@ -1,0 +1,56 @@
+# Environment variables
+.env
+*.env
+**/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv
+*.egg-info/
+dist/
+build/
+**/__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+**/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# Data folders (all projects)
+**/data/
+data/
+
+# Virtual environments (all projects)
+**/venv/
+**/ENV/
+**/env/
+**/.venv/
