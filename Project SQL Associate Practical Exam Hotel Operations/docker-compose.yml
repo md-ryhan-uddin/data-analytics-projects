@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  hotel_postgres:
+    image: postgres:15-alpine
+    container_name: hotel_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hotel_db
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - hotel_postgres_data:/var/lib/postgresql/data
+    networks:
+      - hotel_network
+
+volumes:
+  hotel_postgres_data:
+
+networks:
+  hotel_network:
+    driver: bridge
